@@ -1,0 +1,404 @@
+/* Layout */
+body  {
+    min-width: 630px;
+}
+
+.container{
+    padding-left: 200px;
+    padding-right: 190px;
+}
+
+.container .column{
+    position: relative;
+    float: left;
+}
+
+.center {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.left {
+    width: 180px;
+    padding: 0 10px;
+    right: 240px;
+    margin-left: -100%;
+}
+
+.right{
+    width: 130px;
+    padding: 0 10px;
+    margin-right: -100%;
+}
+
+
+.footer  {
+    clear: both;
+}
+
+/* IE hack */
+* html.left {
+    left: 150px;
+}
+
+/* Make the columns the same height as each other */
+.container{
+    overflow: hidden;
+    height: 900px;
+}
+
+.container .column{
+    padding-bottom: 1001em;
+    margin-bottom: -1000em;
+}
+
+
+/* Fix for the footer */
+* html body {
+    overflow: hidden;
+}
+
+* html  .footer-wrapper{
+    float: left;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10010px;
+    margin-bottom: -10000px;
+    background: #fff;
+}
+
+/* Aesthetics */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.5em;
+}
+
+p{
+    color: #555;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 10px;
+    font-family: 'opensans-bold';
+}
+
+nav ul a {
+    color: darkgreen;
+    text-decoration: none;
+    line-height: 35px;
+}
+
+.header, .footer {
+    font-size: large;
+    padding: 0.3em;
+    background: #BCCE98;
+}
+
+.left{
+    background: #DAE9BC;
+}
+
+.right  {
+    background: #F7FDEB;
+}
+
+.center{
+    background: #fff;
+}
+
+.container .column {
+    padding-top: 1em;
+}
+
+.logo {
+    float: left;
+    padding: 0 10px;
+    right: 400px;
+    margin-right: -100%;
+}
+.logo img{
+    height:50px;
+}
+.header p{
+    padding-left: 70px;
+
+}
+section{
+    padding:30px 70px;
+    font-size:40px;
+    display:block;
+
+}
+section div{
+    display:inline-block;
+    width:350px;
+    height:90px;
+
+}
+#format1{
+    text-decoration:overline;
+    color:#000;
+    font-family:serif;
+    text-shadow: 0 0 15px #999;
+    color: transparent;
+    transition: all 3s;
+}
+#format2{
+    text-decoration:underline;
+    color:#0099cc;
+    font-family:monospace;
+
+}
+#format3{
+    text-decoration:line-through;
+    color:#cc0033;
+    font-family:Tahoma;
+}
+#format4{
+    text-transform: uppercase;
+    color:#000;
+    font-size:30px;
+    font-style:italic;
+    text-shadow: -1px -1px #FFF,
+    -2px -2px #FFF,
+    -1px 1px #FFF,
+    -2px 2px #FFF,
+    1px 1px #FFF,
+    2px 2px #FFF,
+    1px -1px #FFF,
+    2px -2px #FFF,
+    -3px -3px 2px #BBB,
+    -3px 3px 2px #BBB,
+    3px 3px 2px #BBB,
+    3px -3px 2px #BBB;
+    color: steelblue;
+}
+#format5{
+    font-weight:bold;
+    color:#333;
+    font-family:fantasy;
+}
+#format6{
+    text-transform:capitalize;
+    color:#9c8b30;
+    font-family:cursive;
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 40px;
+}
+#format7{
+    padding-left:10px;
+    line-height:80px;
+    letter-spacing:5px;
+    text-transform:lowercase;
+    color:black;
+}
+#format7 span {
+    background:#ff99cc;
+    background-size: 400px;
+}
+#format8{
+    color:#000;
+    font-family:Arial;
+    text-shadow:3px 5px 6px #6c9;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'opensans-bold';
+    color: #000;
+    padding-bottom:30px;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'opensans-bold';
+    color: #000;
+}
+
+h3 {
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-family: 'opensans-bold';
+    color: #000;
+}
+
+.forms{
+    width: 100%;
+    padding: 0 50px;
+    height: 600px;
+    margin: 0 0;
+}
+.forms h3{
+    padding: 10px 0;
+}
+
+.first-form{
+    width: 50%;
+    float: left;
+}
+.second-form{
+    width: 50%;
+    float: right;
+
+}
+
+.forms select{
+    width:304px;
+    height:24px;
+    color: #666;
+    letter-spacing:1px;
+}
+
+.forms input{
+    width:300px;
+    height:18px;
+    color: #666;
+    letter-spacing:1px;
+}
+#country {
+    width:80px;
+    float:left;
+}
+
+#phone{
+    float:left;
+    margin-left: 10px;
+    width:210px;
+}
+
+.forms #mobile{
+    font-size:8px;
+    padding: 0 1px 1px 90px;
+    float:left;
+    color:#666;
+}
+.forms #fixed{
+    font-size:8px;
+    padding: 0 180px 1px 1px;
+    float:right;
+    color:#666;
+}
+.forms textarea {
+    width: 299px;
+    height:65px;
+    resize: none;
+}
+
+#tell{
+    font-size:8px;
+    line-height: 8px;
+    padding:0 100px 1px 1px;
+    float:left;
+    color:#666;
+}
+#send{
+    margin-top: 40px;
+    width:80px;
+    height:30px;
+    font-size: 12px;
+}
+.accept input{
+    width:19px;
+    height:19px;
+    padding:0;
+    margin:0;
+    float:left;
+}
+.accept{
+    padding:0 5px;
+    height:30px;
+}
+
+.accept label{
+    font-size:14px;
+    line-height:10px;
+    float:left;
+    padding: 5px 10px;
+    color:#666;
+}
+
+
+table{
+    width:100%;
+    height:300px;
+    border:1px solid gray;
+    border-collapse:collapse;
+    font-family:"opensans";
+    text-align:center;
+    table-layout:fixed;
+}
+
+thead{
+    background: gray;
+    color:white;
+}
+
+tr, td{
+    padding:5px 30px;
+}
+
+td{
+    border: 1px solid gray;
+}
+
+section{
+    padding:30px 70px;
+    font-size:40px;
+    display:block;
+
+}
+section div{
+    display:inline-block;
+    width:350px;
+    height:90px;
+}
+.audioblock,.videoblock{
+    width: 100%;
+    padding: 10px 70px;
+    display:inline-block;
+}
+.audioblock p{
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: "Cooper Black";
+    color: #000;
+    opacity: 0.7;
+
+}
+.audio1{
+    float: left;
+    width: 50%;
+}
+.audio2{
+    float: right;
+    width: 50%;
+}
+.videoblock{
+    text-align: center;
+    padding: 40px 0;
+}
+video{
+    float: right;
+    padding-right: 100px;
+    width: 40%;
+}
+iframe{
+    float: left;
+    margin-left: 70px;
+    width: 40%;
+
+}
