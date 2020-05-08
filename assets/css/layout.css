@@ -400,5 +400,43 @@ iframe{
     float: left;
     margin-left: 70px;
     width: 40%;
+}
 
+canvas{
+    border:1px solid #000000;
+}
+.panel{
+    float: right;
+    width: 40%;
+}
+
+#clear{
+    width: 200px;
+    height: 20px;
+    background-color: #BCCE98;
+    color: #336633;
+}
+
+#thick{
+    width: 167px;
+    background-color: #BCCE98;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+#color{
+    width: 76px;
+}
+
+.color p{
+    font-family: opensans-bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.thick p{
+    font-family: opensans-bold;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.drawing{
+    padding: 10px 40px;
 }

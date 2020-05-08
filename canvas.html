@@ -2,9 +2,8 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>​​Practice 5 </title>
+    <title>​​Practice 6 </title>
     <link rel="stylesheet" href="assets/css/layout.css" ​>
-    <link rel="stylesheet" href="assets/css/style.css" ​>
 </head>
 <body>
 <header ​ class="header" ​>
@@ -14,15 +13,19 @@
     <p>​ Header...​ </p></header>
 <div ​ class="container" ​>
     <main ​ class="center column" ​>
-        <article><h1>​ Slider​ </h1></article>
-        <div id="mySlider">
-
-        </div>
-        <div class="navButtons">
-            <input id="sliderPrev" type="button" value="<">
-            <input id="sliderNext" type="button" value=">">
-        </div>
-        <div id="sliderNav">
+        <article><h1>​ Canvas​ </h1></article>
+        <div class="drawing">
+            <canvas id="draw" width="490" height="220">
+            </canvas>
+            <div class="panel">
+                <input type="button" id="clear" value="CLEAR" onclick="clearCanvas()">
+                <div class="color">
+                    <p>Цвет кисти: <input id="color" type="color" name="bg" value="#000"></p>
+                </div>
+                <div class="thick">
+                    <p>1<input id="thick" value="3" type="range" min="1" max="30">30</p>
+                </div>
+            </div>
         </div>
 
     </main>
@@ -48,10 +51,10 @@
     <div ​ class="right column" ​><h3>​ Right heading​ </h3>
         <p></p></div>
 </div>
+
+<script src="assets/js/print.js" ;></script>
 <div ​ class="footer-wrapper" ​>
     <footer ​ class="footer" ​><p>​ Footer...​ </p></footer>
 </div>
-
-<script src="assets/js/script.js" ;></script>
 </body>
 </html>
